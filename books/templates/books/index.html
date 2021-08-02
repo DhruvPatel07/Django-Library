@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
+  <title>AES</title>
+  <style>
+    .container {
+      background-repeat:repeat;
+      height: 200%;
+      max-width: 500%;
+      position: fixed;
+      right: 1;
+      left: 0;
+
+      background-size: 100% 50%;
+    }
+
+    .navbar {
+      background-color: rgb(86, 77, 99);
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .navbar a {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      float: left;
+      color: #ece6e6;
+      text-align: center;
+      text-decoration: solid;
+      padding: 8px 14px;
+      font-size: 18px;
+      margin: 2px;
+      font-weight: normal;
+      border-radius: 8px;
+    }
+
+    .navbar a:hover {
+      background-color: grey;
+      /* color: black; */
+      transform: scale(1.1);
+      transition-duration: 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+  {% load static %}
+  <header class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar_brand" id="brand" href="#">Library</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul data-aos="fade-right" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#">Home</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About Us</a>
+            <a href="contact us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="d-flex">
+          <a href="signup.html">SignUp</a>
+          <a href="login.html">login</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <img src="{% static 'img/lib.jpg'%}" alt=""> 
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      delay: 100,
+      duration: 800,
+    });
+  </script>
+</body>
+
+</html>
