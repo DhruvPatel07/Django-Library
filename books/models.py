@@ -4,9 +4,9 @@ from django.db import models
 
 
 class Books(models.Model):
+    studentid = models.CharField(max_length=14)
     book_name = models.CharField(max_length=50)
-    Author_name = models.CharField(max_length=50)
-    category = models.CharField(max_length=50, default="")
+    branch_name = models.CharField(max_length=50)
 
     def __str__(self):
             return self.book_name

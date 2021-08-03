@@ -8,19 +8,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-
-  <title>AES</title>
+  <title>Library</title>
   <style>
     .container {
-      background-repeat:repeat;
+      background: url("/static/img/lib.jpg");
+      background-repeat: repeat;
       height: 200%;
       max-width: 500%;
       position: fixed;
       right: 1;
       left: 0;
-
       background-size: 100% 50%;
     }
+
 
     .navbar {
       background-color: rgb(86, 77, 99);
@@ -54,14 +54,13 @@
   {% load static %}
   <header class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar_brand" id="brand" href="#">Library</a>
+      <a class="navbar_brand" id="brand" href="{% url 'home' %}">Library</a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul data-aos="fade-right" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a href="#">Home</a>
-            <a href="news.html">News</a>
-            <a href="about.html">About Us</a>
+
             <a href="contact us.html">Contact Us</a>
           </li>
         </ul>
@@ -75,9 +74,9 @@
   </header>
 
   <div class="container">
-    <img src="{% static 'img/lib.jpg'%}" alt=""> 
 
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
